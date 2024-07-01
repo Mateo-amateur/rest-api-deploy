@@ -2,7 +2,7 @@ const express = require("express")
 const crypto = require("node:crypto")
 const cors = require("cors")
 
-const movies = require(".movies.json")
+const movies = require("./movies.json")
 const {validateObject, validatePartialMovie} = require("./schemas/movies")
 const PORT = process.env.PORT ?? '1234'
 
